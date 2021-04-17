@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2c5f2d;
+  --color-secondary: #97bc62ff;
+
+  --color-grey-light: #eee;
+  --color-grey: #777;
+  --color-grey-dark: #333;
+
+  --border-thin: 0.5px solid var(--color-primary);
+  --border-normal: 1px solid var(--color-primary);
+}
+
+/*
+UI components
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  background-color: #eee;
+  color: var(--color-primary);
+}
+
+main {
+  padding: 0 1rem;
+}
+
+hr {
+  border: none;
+  border-top: var(--border-thin);
+}
+
+.input--number {
+  width: 5rem;
+  height: 2.5rem;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+  border: var(--border-thin);
+  outline: none;
+}
+
+.input--number:hover {
+  background-color: #eee;
+}
+
+.input--number:focus {
+  border: var(--border-normal);
+  background-color: #ddd;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: var(--border-normal);
+  border-radius: 1rem;
+  background-color: var(--color-grey);
+}
+
+.range__min,
+.range__max {
+  color: var(--color-grey-light);
+}
+
+.range__input {
+  flex: 1;
+  appearance: none;
+  border: none;
+  outline: none;
+  height: 0.5rem;
+}
+
+.range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--color-grey-dark);
+  transition: all 0.2s;
+}
+
+/*
+Regular Components
+*/
+
+.app {
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.password {
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 0.5rem;
+}
+
+.password__content {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+.password__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.password__actions button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.password__actions svg {
+  fill: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
+}
+
+.strength {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.strength span.strong {
+  color: var(--color-secondary);
+}
+
+.strength span.fairly-strong {
+  color: tomato;
+}
+
+.strength span.weak {
+  color: #cd5c5c;
+}
+
+.length,
+.configs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.length__top {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,56 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactIconsBs = require('react-icons/bs');
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\UI\\Checkbox.jsx";
+  function Checkbox(props) {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "checkbox",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "checkbox__input",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBs.BsCheck, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 9
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "checkbox__title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 7
+        }
+      }, props.value))
+    );
+  }
+  exports.default = Checkbox;
+  _c = Checkbox;
+  var _c;
+  $RefreshReg$(_c, "Checkbox");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

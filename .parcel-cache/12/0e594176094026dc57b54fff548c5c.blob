@@ -1,0 +1,65 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactIconsBs = require('react-icons/bs');
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\UI\\Checkbox.jsx", _s = $RefreshSig$();
+  function Checkbox(props) {
+    _s();
+    const [isChecked, setIsChecked] = _react.useState(false);
+    const check = () => {
+      setIsChecked(true);
+    };
+    const unCheck = () => {
+      setIsChecked(false);
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "checkbox",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: `checkbox__input ${isChecked ? 'checked' : ''}`,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 7
+        }
+      }, isChecked ? /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBs.BsCheck, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 22
+        }
+      }) : null), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "checkbox__title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 7
+        }
+      }, props.value))
+    );
+  }
+  exports.default = Checkbox;
+  _s(Checkbox, "ZhOKOS+Td3oentFkMpi7jRDXPaI=");
+  _c = Checkbox;
+  var _c;
+  $RefreshReg$(_c, "Checkbox");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

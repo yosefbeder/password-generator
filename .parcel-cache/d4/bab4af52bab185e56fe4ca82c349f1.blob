@@ -1,0 +1,69 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _UICheckbox = require('./UI/Checkbox');
+  var _UICheckboxDefault = _parcelHelpers.interopDefault(_UICheckbox);
+  var _storePasswordContext = require('../store/password-context');
+  var _storePasswordContextDefault = _parcelHelpers.interopDefault(_storePasswordContext);
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\Configs.jsx", _s = $RefreshSig$();
+  function Configs() {
+    _s();
+    const ctx = _react.useContext(_storePasswordContextDefault.default);
+    const checkboxes = Object.entries(ctx.configs).map((config, i) => {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement(_UICheckboxDefault.default, {
+          value: config[0],
+          checked: config[1],
+          key: i,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8,
+            columnNumber: 12
+          }
+        })
+      );
+    });
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "configs",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 7
+        }
+      }, "Configs"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "configs__content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 7
+        }
+      }, checkboxes))
+    );
+  }
+  exports.default = Configs;
+  _s(Configs, "/dMy7t63NXD4eYACoT93CePwGrg=");
+  _c = Configs;
+  var _c;
+  $RefreshReg$(_c, "Configs");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

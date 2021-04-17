@@ -1,0 +1,72 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\UI\\Range.jsx", _s = $RefreshSig$();
+  function Range(props) {
+    _s();
+    const {value, min, max} = props;
+    const inputEl = _react.useRef(null);
+    changeHanldler = e => {
+      props.onInputChange(e);
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "range",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "range__min",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 7
+        }
+      }, min), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "range",
+        className: "range__input",
+        value: value,
+        min: min,
+        max: max,
+        ref: inputEl,
+        style: {
+          backgroundImage: `linear-gradient(to right, var(--color-grey-dark), var(--color-grey-light)`
+        },
+        onChange: changeHanldler,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 7
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "range__max",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 7
+        }
+      }, max))
+    );
+  }
+  exports.default = Range;
+  _s(Range, "ym51OZLSyFi7C9y0aD9taJOK1dY=");
+  _c = Range;
+  var _c;
+  $RefreshReg$(_c, "Range");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

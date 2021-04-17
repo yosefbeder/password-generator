@@ -1,0 +1,30 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "A simple password generator app with React js",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosefbeder/password-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosefbeder/password-generator/issues"
+  },
+  "homepage": "https://github.com/yosefbeder/password-generator#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}

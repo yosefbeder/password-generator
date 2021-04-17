@@ -1,0 +1,84 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _UIInput = require('./UI/Input');
+  var _UIInputDefault = _parcelHelpers.interopDefault(_UIInput);
+  var _UIRange = require('./UI/Range');
+  var _UIRangeDefault = _parcelHelpers.interopDefault(_UIRange);
+  var _storePasswordContext = require('../store/password-context');
+  var _storePasswordContextDefault = _parcelHelpers.interopDefault(_storePasswordContext);
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\Length.jsx", _s = $RefreshSig$();
+  function Length() {
+    _s();
+    const ctx = _react.useContext(_storePasswordContextDefault.default);
+    const value = ctx.length;
+    const [min, max] = [1, 50];
+    childProps = {
+      value: value,
+      onInputChange: ctx.changeLength,
+      min: min,
+      max: max
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "length",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "length__top",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 9
+        }
+      }, "Length:"), ' ', /*#__PURE__*/_reactDefault.default.createElement(_UIInputDefault.default, {
+        value: value,
+        onInputChange: ctx.changeLength,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 9
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_UIRangeDefault.default, {
+        value: value,
+        min: min,
+        max: max,
+        onInputChange: ctx.changeLength,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 7
+        }
+      }))
+    );
+  }
+  exports.default = Length;
+  _s(Length, "/dMy7t63NXD4eYACoT93CePwGrg=");
+  _c = Length;
+  var _c;
+  $RefreshReg$(_c, "Length");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

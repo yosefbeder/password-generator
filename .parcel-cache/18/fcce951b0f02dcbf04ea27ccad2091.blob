@@ -1,0 +1,65 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactIconsBi = require('react-icons/bi');
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\Strength.jsx", _s = $RefreshSig$();
+  function Strength() {
+    _s();
+    const [strength, setStrength] = _react.useState('strong');
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "strength",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 7
+        }
+      }, "Strength:"), ' ', /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: strength,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 7
+        }
+      }, strength === 'weak' || strength === 'fairly-strong' ? /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBi.BiShieldX, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 11
+        }
+      }) : /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBi.BiCheckShield, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 11
+        }
+      }), strength === 'fairly-strong' ? 'fairly strong' : strength))
+    );
+  }
+  exports.default = Strength;
+  _s(Strength, "kEdSiJmwpJiCxRnQFv5EiyfLQkY=");
+  _c = Strength;
+  var _c;
+  $RefreshReg$(_c, "Strength");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

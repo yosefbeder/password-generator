@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2c5f2d;
+  --color-secondary: #97bc62ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  background-color: #eee;
+  color: var(--color-primary);
+}
+
+main {
+  padding: 0 1rem;
+}
+
+hr {
+  border-top: 0.5px solid var(--color-secondary);
+  border-bottom: 0.5px solid var(--color-secondary);
+}
+
+.app {
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.password {
+  background-color: var(--color-secondary);
+  display: flex;
+  padding: 0.5rem;
+}
+
+.password__content {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+.password__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.password__actions button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.password__actions svg {
+  fill: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
+}
+
+.strength {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.strength span.strong {
+  color: var(--color-secondary);
+}
+
+.strength span.fairly-strong {
+  color: tomato;
+}
+
+.strength span.weak {
+  color: #cd5c5c;
+}

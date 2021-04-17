@@ -1,0 +1,97 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactIconsBi = require('react-icons/bi');
+  var _storePasswordContext = require('../store/password-context');
+  var _storePasswordContextDefault = _parcelHelpers.interopDefault(_storePasswordContext);
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\Password.jsx", _s = $RefreshSig$();
+  const getRandomNumberTo = max => Math.floor(Math.random() * max);
+  const generatePassword = (l, configs) => {
+    const {uppercase: uc, lowercase: lc, digits: dg, symbols: sy} = configs;
+    const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowercase = 'abcdefghijklmnopqrstuvwxyz';
+    const digits = '0123456789';
+    const symbols = '!@#$%^&*()';
+    const passwordChars = `${uc ? uppercase : ''}${lc ? lowercase : ''}${dg ? digits : ''}${sy ? symbols : ''}`;
+    // generate a random number from 0 to passwordChars length in an array
+    const password = Array.from({
+      length: l
+    }, () => getRandomNumberTo(passwordChars.length));
+    console.log(password);
+  };
+  function Password() {
+    _s();
+    const ctx = _react.useContext(_storePasswordContextDefault.default);
+    generatePassword(ctx.length, ctx.configs);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password__content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 7
+        }
+      }, "#72dCe23Ud23*^we#290&@*3"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password__actions",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("button", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBi.BiCopy, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 11
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBi.BiRefresh, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 11
+        }
+      }))))
+    );
+  }
+  exports.default = Password;
+  _s(Password, "/dMy7t63NXD4eYACoT93CePwGrg=");
+  _c = Password;
+  var _c;
+  $RefreshReg$(_c, "Password");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

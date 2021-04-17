@@ -1,0 +1,116 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactIconsBi = require('react-icons/bi');
+  var _reactIconsHi = require('react-icons/hi');
+  var _storePasswordContext = require('../store/password-context');
+  var _storePasswordContextDefault = _parcelHelpers.interopDefault(_storePasswordContext);
+  var _reactCopyToClipboard = require('react-copy-to-clipboard');
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\components\\Password.jsx", _s = $RefreshSig$();
+  const getRandomNumberTo = max => Math.floor(Math.random() * max);
+  const generatePassword = (l, configs) => {
+    const {uppercase: uc, lowercase: lc, digits: dg, symbols: sy} = configs;
+    const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowercase = 'abcdefghijklmnopqrstuvwxyz';
+    const digits = '0123456789';
+    const symbols = '!@#$%^&*()';
+    const passwordChars = `${uc ? uppercase : ''}${lc ? lowercase : ''}${dg ? digits : ''}${sy ? symbols : ''}`;
+    const password = Array.from({
+      length: l
+    }, () => getRandomNumberTo(passwordChars.length)).map(n => passwordChars[n]).join('');
+    return password;
+  };
+  function Password() {
+    _s();
+    const ctx = _react.useContext(_storePasswordContextDefault.default);
+    const [password, setPassword] = _react.useState(generatePassword(ctx.length, ctx.configs));
+    const [copied, setCopied] = _react.useState(false);
+    const newPassword = () => {
+      setPassword(generatePassword(ctx.length, ctx.configs));
+      setCopied(false);
+    };
+    _react.useEffect(() => {
+      newPassword();
+    }, [ctx]);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password__content",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 7
+        }
+      }, password), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "password__actions",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactCopyToClipboard.CopyToClipboard, {
+        text: password,
+        onCopy: () => setCopied(true),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("button", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactIconsHi.IoCopyOutline, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 13
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        onClick: newPassword,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactIconsBi.BiRefresh, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 11
+        }
+      }))))
+    );
+  }
+  exports.default = Password;
+  _s(Password, "WuoHuMwvWVYteG3SV9DHbc4UUwo=");
+  _c = Password;
+  var _c;
+  $RefreshReg$(_c, "Password");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
