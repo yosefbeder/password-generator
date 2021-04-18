@@ -4,7 +4,7 @@
   "description": "A simple password generator app with React js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
