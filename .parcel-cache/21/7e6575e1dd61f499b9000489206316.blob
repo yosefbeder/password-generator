@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="6de98236121af65600a1304582390af1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="ae8597cf677c858ba0f84501bf895ef4"></script>
+  </body>
+</html>

@@ -87,6 +87,16 @@ hr {
   transition: all 0.2s;
 }
 
+.range__input::-moz-range-thumb {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  transition: all 0.2s;
+}
+
 .checkbox {
   display: flex;
   align-items: center;
@@ -143,14 +153,11 @@ Regular Components
   font-family: monospace;
   font-size: 3rem;
   overflow-x: scroll;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
 }
 
-.password__content::-webkit-scrollbar {
-  appearance: none;
-  height: 0;
-}
-
-.password__actions {
+.password__content:scroll .password__actions {
   display: flex;
   gap: 0.5rem;
 }

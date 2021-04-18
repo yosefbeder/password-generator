@@ -1,0 +1,56 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _passwordContext = require('./password-context');
+  var _passwordContextDefault = _parcelHelpers.interopDefault(_passwordContext);
+  var _jsxFileName = "C:\\Users\\mosta\\Desktop\\Yosef Projects\\password-generator\\src\\store\\PasswordContextProvider.jsx", _s = $RefreshSig$();
+  function PasswordContextProvider(props) {
+    _s();
+    const [length, setLength] = _react.useState(16);
+    const changeLength = e => setLength(e.target.value);
+    const [configs, setConfigs] = _react.useState({
+      uppercase: true,
+      lowercase: true,
+      digits: true,
+      symbols: true
+    });
+    const toggleConfig = name => {
+      const newConfigs = {
+        ...configs
+      };
+      newConfigs[`${name}`] = newConfigs[`${name}`] ? false : true;
+      setConfigs(newConfigs);
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_passwordContextDefault.default.Provider, {
+        value: {
+          length,
+          changeLength,
+          toggleConfig,
+          configs
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 5
+        }
+      }, props.children)
+    );
+  }
+  exports.default = PasswordContextProvider;
+  _s(PasswordContextProvider, "HtHClmuPLtvXbXGnN7HjC6bgfzI=");
+  _c = PasswordContextProvider;
+  var _c;
+  $RefreshReg$(_c, "PasswordContextProvider");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
