@@ -157,7 +157,12 @@ Regular Components
   scrollbar-width: none;
 }
 
-.password__content:scroll .password__actions {
+.password__content::-webkit-scrollbar {
+  appearance: none;
+  height: 0;
+}
+
+.password__actions {
   display: flex;
   gap: 0.5rem;
 }
