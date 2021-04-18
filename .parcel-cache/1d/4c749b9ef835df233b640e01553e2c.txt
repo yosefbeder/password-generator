@@ -11,7 +11,7 @@
 69C:\Users\mosta\Desktop\Yosef Projects\password-generator\package.json132631993078590064 0
 101C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\caniuse-lite\data\regions\LC.js121436361000000000 0
 140C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-normalize-timing-functions\node_modules\color-convert\index.js121436361000000000 0
-67C:\Users\mosta\Desktop\Yosef Projects\password-generator\.gitignore132631995265438038 0
+67C:\Users\mosta\Desktop\Yosef Projects\password-generator\.gitignore132632003271552463 0
 99C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\es-abstract\2019\IsInteger.js121436361000000000 0
 78C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\mimic-fn132630595085347622 1
 87C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\dotenv-expand\lib132630594950431430 1
@@ -48,7 +48,7 @@
 83C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\pn\test\cp.js130625510060000000 0
 101C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-calc\node_modules\chalk132630595083762377 1
 142C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-normalize-charset\node_modules\postcss\lib\terminal-highlight.js121436361000000000 0
-61C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist132631998924591056 1
+61C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist132632003458861919 1
 135C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-normalize-string\node_modules\postcss\lib\previous-map.js121436361000000000 0
 107C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\core-js\features\instance\trim-end.js121436361000000000 0
 104C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\which-boxed-primitive\package.json132630595052559171 0
@@ -3173,7 +3173,7 @@
 100C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\@parcel\core\lib\Dependency.js121436361000000000 0
 98C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\readable-stream\package.json132630595053893580 0
 105C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\uri-js\dist\esnext\schemes\https.js121436361000000000 0
-79C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.ab9f20f2.js132631998924470662 0
+79C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.ab9f20f2.js132632003458741520 0
 95C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\minimist\test\kv_short.js121436361000000000 0
 111C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-modules-values\node_modules\chalk132630595076588648 1
 102C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\core-js\modules\es.array.flat.js121436361000000000 0
@@ -4457,7 +4457,7 @@
 89C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\lodash\_shortOut.js121436361000000000 0
 107C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\type-fest\source\set-return-type.d.ts121436361000000000 0
 131C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-minify-font-values\node_modules\color-convert\LICENSE121436361000000000 0
-72C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.html132631998924420498 0
+72C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.html132632003458711434 0
 110C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\@parcel\node-resolver-core\src\_empty.js121436361000000000 0
 129C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\postcss-svgo\node_modules\postcss-value-parser\lib\parse.js121436361000000000 0
 97C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\object.values\test\tests.js121436361000000000 0
@@ -21103,6 +21103,6 @@
 83C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\.bin\uuid.ps1132630595102654852 0
 80C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\.bin\which132630595102705011 0
 84C:\Users\mosta\Desktop\Yosef Projects\password-generator\node_modules\.bin\which.ps1132630595102705011 0
-83C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.ab9f20f2.js.map132631998924581023 0
-80C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.c30704ad.css132631998924440562 0
-84C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.c30704ad.css.map132631998924500769 0
+83C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.ab9f20f2.js.map132632003458851894 0
+80C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.c30704ad.css132632003458741520 0
+84C:\Users\mosta\Desktop\Yosef Projects\password-generator\dist\index.c30704ad.css.map132632003458771633 0
