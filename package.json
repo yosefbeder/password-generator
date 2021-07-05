@@ -1,10 +1,13 @@
 {
   "name": "password-generator",
   "version": "1.0.0",
+  "homepage": "https://yosefbeder.github.io/password-generator/",
   "description": "A simple password generator app with React js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "repository": {
     "type": "git",
